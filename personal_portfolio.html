@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dhyey - portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: rgb(0, 0, 33);
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 75px;
+        background-color: rgb(77, 77, 185);
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+
+      nav ul li {
+        list-style-type: none;
+        margin: 0 23px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+
+      nav ul li a:hover {
+        text-decoration: none;
+        color: rgb(139, 139, 190);
+        font-size: 1.04rem;
+      }
+
+      main hr {
+        border: 0;
+        background-color: #ba82ee;
+        height: 1.4px;
+        margin: 40px 60px;
+      }
+
+      .left {
+        font-size: 1.5rem;
+      }
+
+      .firstsection {
+        display: flex;
+        justify-content: space-around;
+        margin: 80px 0;
+      }
+
+      .firstsection > div {
+        width: 30%;
+      }
+
+      .leftsection {
+        font-size: 3rem;
+        align-items: center;
+        margin: 80px 0;
+      }
+
+      .rightsetion img {
+        width: 100%;
+      }
+
+      .purple {
+        color: rgb(149, 87, 207);
+      }
+
+      .gray {
+        color: gray;
+      }
+
+      .secondsection {
+        max-width: 80vw;
+        margin: auto;
+      }
+
+      .leftsection box {
+        background-color: #000021;
+        width: 80vw;
+        height: 300px;
+        padding: 56px 56px;
+      }
+
+      .secondsection h1 {
+        font-size: 2rem;
+      }
+
+      .footer {
+        background-color: gray;
+        height: 230px;
+      }
+
+      .footer {
+        display: flex;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="left">Dhyey's portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About Me</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="firstsection">
+        <div class="leftsection">
+          Hi, My name is <span class="purple">Dhyey</span>,
+          <div>and I am</div>
+          <span id="element"></span>
+          <!-- <div>student.</div> -->
+        </div>
+        <div class="rightsetion">
+          <img src="bg.png" alt="error loading image" />
+        </div>
+      </section>
+      <hr />
+      <section class="secondsection">
+        <span class="gray">What I have doone so far</span>
+        <h1>Work Experience</h1>
+        <div class="box"></div>
+      </section>
+    </main>
+
+    <!-- <footer>
+      <div class="footer">
+        <div class="frist">
+          <h1>Dhyey's Portfolio</h1>
+        </div>
+        <div class="second"></div>
+        <ul>
+          Home
+        </ul>
+        <div class="third">
+          <ul>
+            contact me
+          </ul>
+        </div>
+      </div>
+    </footer> -->
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["an engineering Student."], 
+        typeSpeed: 40,
+      });
+    </script>
+  </body>
+</html>
